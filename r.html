@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body {background-image:url("image.jpg");
+      background-repeat:no-repeat;
+      background-size:100%}
+div{margin-top:50px; margin-left:500px;}
+</style>	
+<script>
+function validate()
+{
+var x=document.getElementById("p1").value;
+var y=document.getElementById("p2").value;
+
+if(x.match(y))
+return true;
+else
+{
+alert("Password & ConfirmPassword are not same");
+document.getElementById("p1").value="";
+document.getElementById("p2").value="";
+return false;}}
+</script>
+
+<title>
+Registration Form</title>
+</head>
+<body><div><font size=5 color=white>
+<table height="400px" width="500px">
+<form action="register.php" method="POST">
+<tr>
+<td><h3 align="center">&nbsp;Registration Form</h3></td>
+<tr>
+<tr>
+<td> First Name:</td>
+<td><input type="text" name="Fname" maxlength=10 required></td>
+</tr>
+<tr>
+<td>Last Name:</td>
+<td><input type="text" name="Lname" maxlength=20 required></td>
+</td>
+</tr>
+<tr>
+<td>Email-id:</td>
+<td><input type="email" name="email" required></td></tr>
+<tr><td>Password</td>
+<td><input type="password" name="Password" maxlength=10 minlength=5 id="p1" required></td>
+</tr>
+<tr><td>Confirm Password</td>
+<td><input type="password" name="ConfirmPassword" id="p2" maxlength=10 minlength=5 required></td>
+</tr>
+<tr><td>Contact info:</td>
+<td><input type="text" name="contact"  required minlength=10 maxlength=10></td></tr>
+<tr><td>Qualification</td>
+<td><select name="qualification" required>
+<option value="" name="q1" selected hidden>select qualification</option>
+<option value="Btech" name="Btech">Btech</option>
+<option value="Bcom" name="Bcom">BCom</option>
+<option value="BA" name="BA">BA</option>
+<option value="BCA" name="BCA">BCA</option>
+<option value="Bsc" name="Bsc">Bsc</option>
+<option value="Mcom" name="Mcom">MCom</option>
+<option value="q1" name="Pharmacy">Pharmacy</option>
+<option value="Mtech" name="Mtech">Mtech</option>
+<option value="MBA" name="MBA">MBA</option>
+<option value="Hotel Management" name="Hotel Management">Hotel Mangement</option>
+<option value="Bachelor of Laws" name="Bachelor of Laws">Bachelor of Laws</option>
+<option value="Masters of laws" name="Masters of laws" >Masters of laws</option>
+</select>
+</tr>
+<tr></tr> 
+<tr>
+<td colspan=2 align="center"><input type="submit" name="proceed" value="proceed" onClick=" return validate()"></td></tr></table><font>
+
+</div>
+</html>
+
+

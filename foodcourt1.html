@@ -1,0 +1,460 @@
+<html>
+    <head>
+        <title>Food court Menu</title>
+        <link rel="stylesheet" href="foodcourt1.css">
+<style>
+#b2{background-color: thistle;border:blue;font-size:30px;border-radius:45%;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);}
+</style>
+    </head>
+    <body>
+<h1 align="center" style="color:Black;font-size:50px;"><i>Food Court</i></h1>
+        <div class="menu-body">
+            <div class="menu-section1">
+                <h1 class="menu-sec-title">
+                    Square one
+                </h1>
+                <div class="menu-item">
+                     <div class="menu-item-name veg">
+                        Aloo paratha
+                     </div>
+                     <div class="menu-item-price">
+                       30
+                       <button onclick="bill()">Order</button>
+                     </div>
+                     <div class="menu-item-name veg">
+                        Goobhi paratha
+                     </div>
+                     <div class="menu-item-price">
+                        30
+                        <button onclick="bill1()">Order</button>
+                     </div>
+                     <div class="menu-item-name veg">
+                        Paneer paratha
+                     </div>
+                     <div class="menu-item-price">
+                        40
+                        <button onclick="bill2()">Order</button>
+                     </div>
+                     <div class="menu-item-name veg">
+                        Curd
+                     </div>
+                     <div class="menu-item-price">
+                        15
+                        <button onclick="bill3()">Order</button>
+                     </div>
+                     <div class="menu-item-name veg">
+                        Veg kathi roll
+                     </div>
+                     <div class="menu-item-price">
+                        30
+                        <button onclick="bill4()">Order</button>
+                     </div>
+                     <div class="menu-item-name nveg">
+                        Egg kathi roll
+                     </div>
+                     <div class="menu-item-price">
+                        30
+                        <button onclick="bill5()">Order</button>
+                     </div>
+                     <div class="menu-item-name nveg">
+                        Omelettes
+
+                     </div>
+                     <div class="menu-item-price">
+                        30
+                        <button onclick="billl6()">Order</button>
+                     </div>
+                     <div class="menu-item-name nveg">
+                        Boiled Egg
+                     </div>
+                     <div class="menu-item-price">
+                        15
+                        <button onclick="bill7()">Order</button>
+                     </div>
+                     <div class="menu-item-name veg">
+                        Maggi
+                     </div>
+                     <div class="menu-item-price">
+                        25
+                        <button onclick="bill8()">Order</button>
+                     </div>
+                </div>
+                <div>
+                    <img src="squareone.jpg" alt="Squareone" id="image0">
+                </div>
+                <div class="menu-item">
+                     <div class="menu-item-name veg">
+                        Executive Thali
+                     </div>
+                     <div class="menu-item-price">
+                        50
+                        <button onclick="bill9()">Order</button>
+                     </div>
+                     <div class="menu-item-name veg">
+                        Dal Makhani combo
+                     </div>
+                     <div class="menu-item-price">
+                        50
+                        <button onclick="bill10()">Order</button>
+                     </div>
+                     <div class="menu-item-name veg">
+                        Naan combo
+                     </div>
+                     <div class="menu-item-price">
+                        50
+                        <button onclick="bill11()">Order</button>
+                     </div>
+                     <div class="menu-item-name veg">
+                        Chana Masala
+                     </div>
+                     <div class="menu-item-price">
+                        25
+                        <button onclick="bill12()">Order</button>
+                     </div>
+                     <div class="menu-item-name veg">
+                        Mix veg
+                     </div>
+                     <div class="menu-item-price">
+                        25
+                        <button onclick="bill13()">Order</button>
+                     </div>
+                     <div class="menu-item-name veg">
+                      Roti
+                     </div>
+                     <div class="menu-item-price">
+                        05
+                        <button onclick="bill14()">Order</button>
+                     </div>
+                     <div class="menu-item-name veg">
+                        Lacha Parantha
+                     </div>
+                     <div class="menu-item-price">
+                        10
+                        <button onclick="bill15()">Order</button>
+                     </div>
+                     <div class="menu-item-name veg">
+                       Amritsar naan
+                     </div>
+                     <div class="menu-item-price">
+                        15
+                        <button onclick="bill16()">Order</button>
+                     </div>
+                </div>
+            </div>
+            
+            <div class="menu-section2">
+                <h1 class="menu-sec-title">
+                    Tea Q<br>(Hot)
+                </h1>
+                <div class="menu-item">
+                     <div class="menu-item-name veg">
+                        Espresso
+                     </div>
+                     <div class="menu-item-price">
+                        40
+                        <button onclick="bill17()">Order</button>
+                     </div>
+                     <div class="menu-item-name veg">
+                        Americano
+                     </div>
+                     <div class="menu-item-price">
+                        40
+                        <button onclick="bill18()">Order</button>
+                     </div>
+                     <div class="menu-item-name veg">
+                        Cafe mocha
+                     </div>
+                     <div class="menu-item-price">
+                        40
+                        <button onclick="bill19()">Order</button>
+                     </div>
+                     <div class="menu-item-name veg">
+                        Cafe late
+                     </div>
+                     <div class="menu-item-price">
+                        40
+                        <button onclick="bill20()">Order</button>
+                     </div>
+                     <div class="menu-item-name veg">
+                        Cappucinno
+                     </div>
+                     <div class="menu-item-price">
+                        50
+                        <button onclick="bill21()">Order</button>
+                     </div>
+                     <div class="menu-item-name veg">
+                        Hot chocolate
+                     </div>
+                     <div class="menu-item-price">
+                        40
+                        <button onclick="bill22()">Order</button>
+                     </div>
+                </div>
+                <div>
+                    <img src="coffee.jpg" alt="Picture of hot coffee" id="image1">
+                </div>
+                <h1 class="menu-sec-title">
+                    Tea Q <br>(Cold)
+                </h1>
+                <div class="menu-item">
+                     <div class="menu-item-name veg">
+                        Cafe Frappe
+                     </div>
+                     <div class="menu-item-price">
+                        50
+                        <button onclick="bill23()">Order</button>
+                     </div>
+                     <div class="menu-item-name veg">
+                        Choco Frappe 
+                     </div>
+                     <div class="menu-item-price">
+                        40
+                        <button onclick="bill24()">Order</button>
+                     </div>
+                     <div class="menu-item-name veg">
+                        Green apple soda
+                     </div>
+                     <div class="menu-item-price">
+                        60
+                        <button onclick="bill25()">Order</button>
+                     </div>
+                     <div class="menu-item-name veg">
+                        Cool blue
+                     </div>
+                     <div class="menu-item-price">
+                        50
+                        <button onclick="bill26()">Order</button>
+                     </div>
+                     <div class="menu-item-name veg">
+                        Masala Lemonade
+                     </div>
+                     <div class="menu-item-price">
+                        50
+                        <button onclick="bill27()">Order</button>
+                     </div>
+                     <div class="menu-item-name veg">
+                        Mint mojito
+                     </div>
+                     <div class="menu-item-price">
+                        50
+                        <button onclick="bill28()">Order</button>
+                     </div>
+                </div>
+            </div>
+            <div class="menu-section3">
+               <div>
+                   <img src="cake.jpg" alt="cake" id="image2">
+               </div>
+               <h1 class="menu-sec-title">
+                   Big Eats
+                </h1>
+                <div class="menu-item">
+                     <div class="menu-item-name">
+                        Paneer sandwich
+                     </div>
+                     <div class="menu-item-price">
+                        45
+                        <button onclick="bill29()">Order</button>
+                     </div>
+                     <div class="menu-item-name">
+                        Chicken sandwich
+                     </div>
+                     <div class="menu-item-price">
+                        55
+                        <button onclick="bill30()">Order</button>
+                     </div>
+                     <div class="menu-item-name">
+                        Potato puff
+                     </div>
+                     <div class="menu-item-price">
+                       20
+                       <button onclick="bill31()">Order</button>
+                     </div>
+                     <div class="menu-item-name">
+                        Veg Franky
+                     </div>
+                     <div class="menu-item-price">
+                        50
+                        <button onclick="bill32()">Order</button>
+                     </div>
+                     <div class="menu-item-name">
+                        Brownie 
+                     </div>
+                     <div class="menu-item-price">
+                        40
+                        <button onclick="bill33()">Order</button>
+                     </div>
+                     <div class="menu-item-name">
+                        Chocolate chip cookies
+                     </div>
+                     <div class="menu-item-price">
+                        20
+                        <button onclick="bill34()">Order</button>
+                     </div>
+                </div>
+                <div>
+                    <img src="sandwich.jpg" alt="Ending Note" id="image3">
+                </div>
+                <br>
+                <input type="button" id="finalb" onclick="func()" value="Show me the total">
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 <div class="dropdown">
+  <button class="dropbtn">Proceed</button>
+  <div class="dropdown-content">
+    <a href="burgrill.html">Burgrill</a>
+    <a href="lapinoz.html">Lapinoz</a>
+    <a href="havmor.html">Havmor</a>
+  </div>
+</div> <p id="p1"></p>
+<button id="b2"><a href="feedback.html" style="text-decoration:none"><b>FeedBack</b></a></button>
+            </div>
+        </div>
+ <script>
+  var total=0;
+   function bill()
+   {
+    total=total+30;
+   }
+function bill1()
+   {
+    total=total+30;
+   }
+function bill2()
+   {
+    total=total+40;
+   }
+function bill3()
+   {
+    total=total+15;
+   }
+function bill4()
+   {
+    total=total+30;
+   }
+function bill5()
+   {
+    total=total+30;
+   }
+function bill6()
+   {
+    total=total+30;
+   }
+function bill7()
+   {
+    total=total+15;
+   }
+function bill8()
+   {
+    total=total+25;
+   }
+function bill9()
+   {
+    total=total+50;
+   }
+function bill10()
+   {
+    total=total+50;
+   }
+function bill11()
+   {
+    total=total+50;
+   }
+function bill12()
+   {
+    total=total+25;
+   }
+function bill13()
+   {
+    total=total+25;
+   }
+function bill14()
+   {
+    total=total+05;
+   }
+function bill15()
+   {
+    total=total+10;
+   }
+function bill16()
+   {
+    total=total+15;
+   }
+function bill17()
+   {
+    total=total+40;
+   }
+function bill18()
+   {
+    total=total+40;
+   }
+function bill19()
+   {
+    total=total+40;
+   }
+function bill20()
+   {
+    total=total+40;
+   }
+function bill21()
+   {
+    total=total+50;
+   }
+function bill22()
+   {
+    total=total+40;
+   }
+function bill23()
+   {
+    total=total+50;
+   }
+function bill24()
+   {
+    total=total+40;
+   }
+function bill25()
+   {
+    total=total+60;
+   }
+function bill26()
+   {
+    total=total+50;
+   }
+function bill27()
+   {
+    total=total+50;
+   }
+function bill28()
+   {
+    total=total+50;
+   }
+function bill29()
+   {
+    total=total+45;
+   }
+function bill30()
+   {
+    total=total+55;
+   }
+function bill31()
+   {
+    total=total+20;
+   }
+function bill32()
+   {
+    total=total+50;
+   }
+function bill33()
+   {
+    total=total+40;
+   }
+function bill34()
+   {
+    total=total+20;
+   }
+function func()
+   {
+     document.getElementById("p1").innerHTML=total;
+   }
+</script>
+    </body>
+</html>

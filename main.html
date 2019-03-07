@@ -1,0 +1,376 @@
+<html>
+<head>
+<title> TEAQ </title>
+</head>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="amplitude.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0;  }
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+    
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 50%;left:10%; background-color: #F0F8FF;
+ font-family: Bradley Hand ITC;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color:black ;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 30%; left:10%;
+ background-color:#F0F8FF;
+ font-size: 50px;display:inline-block;font-family: Cooper Black;}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+    #d4{ background-image: url("a4.jpg");background-attachment: fixed;}
+    #d3{ position: relative; left: 93% ; right: 10% ;top: 15%;}
+    #d5{background-color:black;}
+    .icon-bar a {display: block;text-align: center;padding: 16px;color: white;font-size: 50px;}
+    .icon-bar a:hover {background-color: #000;}
+.facebook { background: black; color: white;}
+.twitter {background: black;color: white;}
+.google { background: black;color: white;}
+.linkedin {background: black;color: white;}
+.youtube { background: black; color: white;}
+#d1{   position: relative; left: 70px;top: 9px; right: 40px; }
+#d2{ position: relative; left: 40% ; right: 10% ;top: 11%; }
+.dropbtn { background-color:  #f44336; color: white; padding: 16px; font-size: 16px; border: none;}
+.dropdown { position: relative; display: inline-block;}
+.dropdown-content { display: none; position: absolute; background-color: peachpuff; min-width: 160px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);z-index: 1;}
+.dropdown-content a { color: black; padding: 12px 16px; text-decoration: none;display: block;}
+.dropdown-content a:hover {background-color: lightpink;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color:  #f44336;}
+    a.a1:link, a.a1:visited { background-color: #f44336; color: white; padding: 14px 25px; text-align: center;text-decoration: none;display: inline-block;}
+a.a1:hover, a.a1:active { background-color: red;}
+#aud{ color:black;width:100%;}
+    #d7{position: relative;}
+    .quote1{color:crimson;padding: 8px 12px;position:absolute;top: 20%; left:10%; background-color:#E0FFFF;font-size: 50px;font-family:Algerian;z-index=-1; }
+    #d8{color:coral;padding: 8px 12px;position:absolute;top: 40%; left:10%; background-color:	#F5FFFA;font-size: 25px;font-family:Bell MT;z-index=-1; border-radius: 98%;}
+    #d9{color:red;padding: 8px 12px;position:absolute;top: 5%; left:40%; background-color:black;font-size: 50px;font-family: Cooper Black;z-index=-1; }
+    #d10{position: relative; background-color:black}
+    #d11{color:red; padding: 8px 12px;position:relative;top: 10%; left:40%; background-color:black;font-size: 50px;font-family: Cooper Black;}
+    #d12{color:white; padding: 8px 12px;position:relative;top: 40%; left:0%; background-color:black;font-size: 30px;font-family: Broadway; }
+    #d13{color:	#FFFF00; padding: 8px 12px;position:relative;top: 50%; left:0%; background-color:black;font-size: 30px;font-family: Comic Sans MS; }
+    #d14{color:white; padding: 8px 12px;position:relative;top: 40%; left:0%; background-color:black;font-size: 30px;font-family: Broadway; }
+    #d16{color:white; padding: 8px 12px;position:relative;top: 40%; left:0%; background-color:black;font-size: 30px;font-family: Broadway; }
+    #d15{color:	#FFFF00; padding: 8px 12px;position:relative;top: 50%; left:0%; background-color:black;font-size: 30px;font-family: Comic Sans MS; }
+    #d17{color:	#FFFF00; padding: 8px 12px;position:relative;top: 50%; left:0%; background-color:black;font-size: 30px;font-family: Comic Sans MS; }
+    #d18{position: relative;} 
+    .quote2{color:#4B0082;padding: 8px 12px;position:absolute;top: 10%; left:0%; background-color:transparent;font-size: 50px;font-family:Algerian;z-index=-1; }
+    #d19{color:	#B22222;padding: 8px 12px;position:absolute;top: 3%; left:40%; background-color:transparent;font-size: 50px;font-family: Cooper Black;z-index=-1; }
+    .quote3{color:#FF00FF;padding: 8px 12px;position:absolute;top: 25%; left:5%; background-color:	#FFF5EE;font-size: 50px;font-family:Algerian;z-index=-1; }
+    #d19{color:	#B22222;padding: 8px 12px;position:absolute;top: 3%; left:40%; background-color:transparent;font-size: 50px;font-family: Cooper Black;z-index=-1; }
+    #d21{color:	black;padding: 8px 12px;position:absolute; top:90%;left:0%; background-color:transparent;font-size: 20px;font-family: Bell MT;z-index=-1; }
+
+    #d20{position :absolute; top:35%; left:3%;}
+  #d30{height:100%;background-image:url(square.gif);color:white;background-color:#F5FFFA;font-size: 40px;font-family:Bell MT;background-size:cover; }
+  #d31{text-align:left;font-size:80px;font-family: Cooper Black;color:red;}
+    
+    input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: crimson;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 20px;
+}
+
+    </style>
+</head>
+<body><div>
+    <div>
+        <div id="d5">
+        <br>
+        <div id="d3">
+  <a href="https://www.facebook.com/ChitkaraU/" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="https://twitter.com/chitkarau?lang=en" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="https://www.chitkara.edu.in/" class="google"><i class="fa fa-google"></i></a> 
+  <a href="https://www.chitkara.edu.in/news/chitkara-university-linkedin-education/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="https://www.youtube.com/user/ChitkaraU" class="youtube"><i class="fa fa-youtube"></i></a> 
+</div>
+        <div id="d1">
+            <h1><font color="white">Square  <img src="a6.jpg" height="70px" width="70px"> One</font></h1>
+        </div>
+              <div id="d2">
+            <a href="#d5" class="a1">Home</a>&nbsp;&nbsp;<a href="#d7" class="a1">About Us</a>&nbsp;&nbsp; <div class="dropdown">
+                                                                                                      <button class="dropbtn">Menu</button>
+                                                                                                         <div class="dropdown-content">
+                                                                                                             <a href="burgrill.html">Burgrill</a>
+                                                                                                               <a href="lapinoz.html">Lapinoz</a>
+                                                                                                                   <a href="havmor.html">Havmor</a>
+                                                                                                                    <a href="#">Food Court</a>
+                                                                                                                     </div></div>
+                  &nbsp;&nbsp;<a href="#d10" class="a1">Location</a>&nbsp;&nbsp;<a href="#d18" class="a1">Contact Us</a>&nbsp;&nbsp;<a href="r.html" class="a1">Register</a>&nbsp;&nbsp;<a href="#d30" class="a1">History</a>
+                                                                                                                                    
+        </div>
+        <br>
+        </div><div id="d4">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">Feast &  Gather </div>
+  <img src="a2.jpg" style="width:100%" class="myslides1">
+  <div class="text">Spend more time at your table,not at your mess</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">You'll love the variety, we offer! </div>
+  <img src="a1.jpg" style="width:100%"  class="myslides1">
+  <div class="text">We want you to come back regularly !!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">Laughter is brightest :)</div>
+  <img src="a3.jpg" style="width:100%"  class="myslides1">
+  <div class="text">where ##Food is Best</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+        
+     <audio controls id="aud">
+  <source src="tone.mp3" type="audio/ogg">
+  <source src="tone.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+        </div>
+        <div>
+        <div id="d7">
+            <div id=d9>About Us</div>
+            <img src="a7.jpg" style="width:100%;">
+            <div class="quote1"> Our mission is to ensure nobody has a  bad meal</div>
+            <div id="d8">
+               &emsp;&emsp; &emsp;&emsp;&emsp;&emsp;  &emsp;&emsp; &emsp;&emsp;&emsp;&emsp;  &emsp;&emsp; &emsp;&emsp;&emsp;&emsp; We do this by.<br>
+         &emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;  Helping people discover great places around them.<br>
+         &emsp; &emsp;Our team gathers information from every cafeteria on a regular basis to ensure our data is fresh.<br>
+         Our vast community of food lovers share their reviews and photos, so you have all that you need to make an informed choice<br>
+   
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  Enabling restaurants to create amazing experiences.<br>
+ &emsp;&emsp;With dedicated engagement and management tools, we're enabling cafe to spend more time focusing on<br> 
+                &emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;  food itself, which translates directly to better dining experiences.<br><br>
+            </div>
+        </div>
+    </div>
+    <div>
+    
+            <div id="d30">
+             <div id="d31">&nbsp;&nbsp;&nbsp;&nbsp;<u>History</u><br></div>
+         <br><br><br>The "CHITKARA FOODCOURT" well known as "SQUAREONE" which contain "BURGRILL" "LAPINOZ" "TEA Q" .It was enaugurated in June,2016.SQUARE ONE is well furnished and fully air conditioned . 
+        In past, it was a simple canteen but with efforts of our management system it has reached to the next level of hygine,food quality are becoming better day by day.
+        Soon this SQUAREONE will be completing its 2nd floor.
+             </div>
+      </div>
+    
+    <div id="d10">
+        <div id="d11">Location</div>
+        <div id="d12">Chandigarh is linked to the rest of the country by air, road and rail networks.<br><br>
+                       How to reach Chandigarh by Air</div>
+        <div id="d13"> Chandigarh is connected by air to major India cities such as New Delhi, Mumbai and Ahmedabad.<br> The Chandigarh Airport, soon to become Chandigarh International Airport, is just 11 kms away from the city centre in Sector 17.</div>
+        <div id="d14">How to reach Chandigarh by Road</div>
+        <div id="d15">The city is conveniently located within motorable distance from a number of major cities of north India. National Highways 21 and 22 run through the city, and excellent road condition with pleasant views on either side of the road offer a pleasant drive. It is approximately 250 kms north of New Delhi and takes nearly five hours for the journey.</div>
+        <div id="d16">How to reach Chandigarh by Rail</div>   
+        <div id="d17">Chandigarh is linked with rest of the country with an effective rail network. Important trains such as the Shatabdi Express and the Himalayan Queen provide connection with New Delhi on a daily basis. There are also trains to other important cities such as Mumbai and Kolkata. The Chandigarh railway station is about 8 kms from the city center in Sector 17.</div>
+    </div>
+    
+    
+    <div id="d18">
+        <div id=d19>Contact Us</div>
+            <img src="a8.jpg" style="width:100%;">
+            <div class="quote2">While trends come and go, good food at a reasonable price is never out of style.</div>
+            <div class="quote3">We would love to hear from you</div>
+        <div id="d20">
+            
+  <div class="container">
+  <form action="thankyou.html">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name = "firstname" placeholder="Your name.." required>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+    <label for="country">Country</label>
+    <select id="country" name="country" required>
+      <option value="India">India</option>
+      <option value="France">France</option>
+      <option value="Nepal">Nepal</option>
+      <option value="Bhutan">Bhutan</option>      
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+       
+        </div>
+        <div id="d21">Administrative office<br>
+                       Saraswati Kendra,<br>
+                      SCO 160-161, Sector 9 C,<br>
+                      Chandigarh 160 009, India.<br>
+                      Telephone: +91-172-4691800,+91-172-2746209<br>
+                      <b>Email:</b>zivakholi18@gmail.com<br>
+             Chitkara University, Punjab<br>
+             Chandigarh-Patiala National Highway (NH-64)<br>
+                            Punjab-140 401, India<br>
+                             Tel:- +91.1762.507084-86<br>
+            
+        </div>
+        
+        
+    </div>
+
+    
+    
+    
+    
+    
+    
+</div>
+</body>
+</html> 
